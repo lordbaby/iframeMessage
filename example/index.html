@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iframe数据传递</title>
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script type="text/javascript" src="../src/mp.js"></script>
+	<style type="text/css">
+		.wrapper{
+			padding: 10px;
+			margin: 0 auto;
+			width: 900px;
+			min-height: 500px;
+			border:1px solid #ccc;
+			border-radius: 5px;
+		}
+		.left{
+			float: left;
+		}
+		.right{
+			float: left;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="left">
+			<iframe src="iframe1.html" frameborder="1" width="200" height="500"></iframe>
+		</div>
+		<div class="right">
+			<iframe src="iframe2.html" frameborder="1" width="300" height="500"></iframe>
+		</div>
+	</div>
+</body>
+</html>

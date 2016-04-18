@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iframe1</title>
+</head>
+<body>
+	<p>iframe 1</p>
+	消息参数：<input id="param" type="text" value="msg" /><br>
+	消息内容：<input id="msg" type="text"  /><br>
+	<button id="btnSend">发送</button>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script type="text/javascript" src="../src/mp.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$('#btnSend').on('click', function(event) {
+			var msg=$('#msg').val();
+			MP.send('msg',{msg:msg}/*,options */);
+		});
+	});
+	</script>
+</body>
+</html>
